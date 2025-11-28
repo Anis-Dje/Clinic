@@ -26,6 +26,8 @@
   --radius-lg: 20px;
   --radius-xl: 30px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Touch target size for accessibility */
+  --touch-target-size: 44px;
 }
 
 /* Reset & Base */
@@ -3172,13 +3174,13 @@ a {
 .doctor-social a,
 .back-to-top,
 .navbar-toggler {
-    min-height: 44px;
-    min-width: 44px;
+    min-height: var(--touch-target-size);
+    min-width: var(--touch-target-size);
 }
 
 /* Ensure links in navigation have proper touch targets */
 .nav-link {
-    padding: 12px 18px !important;
+    padding: 12px 18px;
 }
 
 /* ----------------------------------------
@@ -3639,8 +3641,8 @@ a {
     }
 
     .footer-social a {
-        width: 44px;
-        height: 44px;
+        width: var(--touch-target-size);
+        height: var(--touch-target-size);
     }
 
     .footer-links h5,
@@ -3700,7 +3702,7 @@ a {
     .form-select {
         font-size: 16px; /* Prevents zoom on iOS */
         padding: 12px;
-        min-height: 44px;
+        min-height: var(--touch-target-size);
     }
 
     /* Emergency Page Specific */
@@ -3824,8 +3826,8 @@ a {
     .back-to-top {
         bottom: 20px;
         right: 20px;
-        width: 44px;
-        height: 44px;
+        width: var(--touch-target-size);
+        height: var(--touch-target-size);
     }
 
     /* Carousel controls hidden on small mobile */
@@ -4275,9 +4277,9 @@ a {
     *,
     *::before,
     *::after {
-        animation-duration: 0.01ms !important;
+        animation-duration: 0s !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
+        transition-duration: 0s !important;
     }
 }
 
@@ -4286,8 +4288,8 @@ a {
    ---------------------------------------- */
 @media (hover: none) and (pointer: coarse) {
     /* Touch devices - larger touch targets */
-    .nav-link {
-        padding: 14px 20px !important;
+    .navbar-nav .nav-link {
+        padding: 14px 20px;
     }
 
     .footer-links a {
