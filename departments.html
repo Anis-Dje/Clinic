@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments & Specialties - HealthCare Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span><i class="fas fa-phone-alt"></i> (555) 123-4567</span>
+                    <span><i class="fas fa-envelope"></i> info@healthcareclinic.com</span>
+                    <span><i class="fas fa-clock"></i> Mon-Fri: 8AM - 6PM</span>
+                </div>
+                <div class="top-bar-right">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="brand-logo">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <span class="brand-text">HealthCare <span class="brand-accent">Clinic</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active " href="departments.html">Our Departments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="emergency.html">Emergency</a></li>
+                </ul>
+                <a href="appointment.html" class="btn btn-primary-custom ms-lg-3">
+                    <i class="fas fa-calendar-check"></i> Book Appointment
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Departments & Specialties</h1>
+        <p>Explore our comprehensive range of medical departments and specialized care services</p>
+    </div>
+
+    <!-- Departments Overview Section -->
+    <section class="departments-overview py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <div class="section-badge">
+                    <span>Our Specialties</span>
+                </div>
+                <h2 class="section-title">World-Class Medical Departments</h2>
+                <p class="section-subtitle">Each department is equipped with state-of-the-art facilities and staffed by experienced specialists dedicated to providing exceptional patient care.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardiology Department -->
+    <section class="department-section py-5" id="cardiology">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="department-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&h=400&fit=crop" alt="Cardiology Department" class="img-fluid rounded-lg department-img">
+                        <div class="department-badge">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="department-content">
+                        <h2 class="department-title">Cardiology</h2>
+                        <p class="department-description">Our Cardiology Department is a center of excellence for heart and cardiovascular care. We offer comprehensive diagnostic, interventional, and preventive cardiology services using the latest technology and evidence-based treatments.</p>
+                        
+                        <div class="department-services">
+                            <h5>Services Offered:</h5>
+                            <div class="services-grid">
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Echocardiography</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Cardiac Catheterization</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Pacemaker Implantation</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Heart Failure Management</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Angioplasty & Stenting</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Cardiac Rehabilitation</div>
+                            </div>
+                        </div>
+
+                        <div class="department-facilities">
+                            <h5>Facilities:</h5>
+                            <p>Our cardiac care unit features advanced cardiac monitoring systems, a dedicated cardiac catheterization lab, and a fully equipped cardiac ICU for critical care.</p>
+                        </div>
+
+                        <div class="department-team">
+                            <h5>Meet Our Team:</h5>
+                            <div class="team-avatars">
+                                <div class="team-avatar">
+                                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=100&h=100&fit=crop" alt="Dr. Sarah Anderson">
+                                    <span>Dr. Sarah Anderson</span>
+                                </div>
+                                <div class="team-avatar">
+                                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=100&h=100&fit=crop" alt="Dr. James Wilson">
+                                    <span>Dr. James Wilson</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="appointment.html" class="btn btn-primary-custom mt-4">
+                            <i class="fas fa-calendar-check"></i> Book Cardiology Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neurology Department -->
+    <section class="department-section py-5 bg-light" id="neurology">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="department-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop" alt="Neurology Department" class="img-fluid rounded-lg department-img">
+                        <div class="department-badge">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="department-content">
+                        <h2 class="department-title">Neurology</h2>
+                        <p class="department-description">Our Neurology Department provides expert care for disorders of the brain, spine, and nervous system. Our team of neurologists uses advanced diagnostic tools and innovative treatments to manage a wide range of neurological conditions.</p>
+                        
+                        <div class="department-services">
+                            <h5>Services Offered:</h5>
+                            <div class="services-grid">
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Stroke Care & Prevention</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Epilepsy Treatment</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Multiple Sclerosis Care</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Parkinson's Disease</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Headache & Migraine Clinic</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Neuromuscular Disorders</div>
+                            </div>
+                        </div>
+
+                        <div class="department-facilities">
+                            <h5>Facilities:</h5>
+                            <p>Equipped with advanced EEG monitoring, MRI and CT imaging, nerve conduction studies lab, and a specialized neuro-ICU for acute neurological emergencies.</p>
+                        </div>
+
+                        <div class="department-team">
+                            <h5>Meet Our Team:</h5>
+                            <div class="team-avatars">
+                                <div class="team-avatar">
+                                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=100&h=100&fit=crop" alt="Dr. Michael Chen">
+                                    <span>Dr. Michael Chen</span>
+                                </div>
+                                <div class="team-avatar">
+                                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=100&h=100&fit=crop" alt="Dr. Emily Rodriguez">
+                                    <span>Dr. Emily Rodriguez</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="appointment.html" class="btn btn-primary-custom mt-4">
+                            <i class="fas fa-calendar-check"></i> Book Neurology Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Orthopedics Department -->
+    <section class="department-section py-5" id="orthopedics">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="department-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop" alt="Orthopedics Department" class="img-fluid rounded-lg department-img">
+                        <div class="department-badge">
+                            <i class="fas fa-bone"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="department-content">
+                        <h2 class="department-title">Orthopedics</h2>
+                        <p class="department-description">Our Orthopedic Department specializes in the prevention, diagnosis, and treatment of musculoskeletal disorders. From joint replacement surgery to sports medicine, our experts provide comprehensive bone and joint care.</p>
+                        
+                        <div class="department-services">
+                            <h5>Services Offered:</h5>
+                            <div class="services-grid">
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Joint Replacement Surgery</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Sports Medicine</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Spine Surgery</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Fracture Care</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Arthroscopy</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Physical Rehabilitation</div>
+                            </div>
+                        </div>
+
+                        <div class="department-facilities">
+                            <h5>Facilities:</h5>
+                            <p>State-of-the-art operating theaters with robotic-assisted surgery capabilities, advanced imaging suite, dedicated physiotherapy center, and modern rehabilitation gym.</p>
+                        </div>
+
+                        <div class="department-team">
+                            <h5>Meet Our Team:</h5>
+                            <div class="team-avatars">
+                                <div class="team-avatar">
+                                    <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=100&h=100&fit=crop" alt="Dr. David Williams">
+                                    <span>Dr. David Williams</span>
+                                </div>
+                                <div class="team-avatar">
+                                    <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=100&h=100&fit=crop" alt="Dr. Lisa Park">
+                                    <span>Dr. Lisa Park</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="appointment.html" class="btn btn-primary-custom mt-4">
+                            <i class="fas fa-calendar-check"></i> Book Orthopedics Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pediatrics Department -->
+    <section class="department-section py-5 bg-light" id="pediatrics">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="department-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600&h=400&fit=crop" alt="Pediatrics Department" class="img-fluid rounded-lg department-img">
+                        <div class="department-badge">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="department-content">
+                        <h2 class="department-title">Pediatrics</h2>
+                        <p class="department-description">Our Pediatrics Department is dedicated to the health and well-being of infants, children, and adolescents. Our child-friendly environment and compassionate staff ensure a comfortable experience for your little ones.</p>
+                        
+                        <div class="department-services">
+                            <h5>Services Offered:</h5>
+                            <div class="services-grid">
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Well-Child Visits</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Vaccinations</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Developmental Assessments</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Pediatric Emergency Care</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Childhood Illness Treatment</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Nutritional Counseling</div>
+                            </div>
+                        </div>
+
+                        <div class="department-facilities">
+                            <h5>Facilities:</h5>
+                            <p>Colorful, child-friendly waiting areas, dedicated pediatric ward with play zones, neonatal ICU, and specialized pediatric diagnostic equipment designed for children.</p>
+                        </div>
+
+                        <div class="department-team">
+                            <h5>Meet Our Team:</h5>
+                            <div class="team-avatars">
+                                <div class="team-avatar">
+                                    <img src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?w=100&h=100&fit=crop" alt="Dr. Michael Torres">
+                                    <span>Dr. Michael Torres</span>
+                                </div>
+                                <div class="team-avatar">
+                                    <img src="https://images.unsplash.com/photo-1614608682850-e0d6ed316d47?w=100&h=100&fit=crop" alt="Dr. Anna Johnson">
+                                    <span>Dr. Anna Johnson</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="appointment.html" class="btn btn-primary-custom mt-4">
+                            <i class="fas fa-calendar-check"></i> Book Pediatrics Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dermatology Department -->
+    <section class="department-section py-5" id="dermatology">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="department-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&h=400&fit=crop" alt="Dermatology Department" class="img-fluid rounded-lg department-img">
+                        <div class="department-badge">
+                            <i class="fas fa-hand-sparkles"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="department-content">
+                        <h2 class="department-title">Dermatology</h2>
+                        <p class="department-description">Our Dermatology Department offers comprehensive skin care services, from medical dermatology treating skin conditions to cosmetic procedures that enhance your natural beauty. Our dermatologists are experts in skin health.</p>
+                        
+                        <div class="department-services">
+                            <h5>Services Offered:</h5>
+                            <div class="services-grid">
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Skin Cancer Screening</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Acne Treatment</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Eczema & Psoriasis Care</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Laser Treatments</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Cosmetic Dermatology</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Mole Removal</div>
+                            </div>
+                        </div>
+
+                        <div class="department-facilities">
+                            <h5>Facilities:</h5>
+                            <p>Advanced laser treatment suites, dermatoscopy equipment, phototherapy units, and a dedicated cosmetic treatment center with the latest aesthetic technologies.</p>
+                        </div>
+
+                        <div class="department-team">
+                            <h5>Meet Our Team:</h5>
+                            <div class="team-avatars">
+                                <div class="team-avatar">
+                                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=100&h=100&fit=crop" alt="Dr. Emily Chen">
+                                    <span>Dr. Emily Chen</span>
+                                </div>
+                                <div class="team-avatar">
+                                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=100&h=100&fit=crop" alt="Dr. Rachel Kim">
+                                    <span>Dr. Rachel Kim</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="appointment.html" class="btn btn-primary-custom mt-4">
+                            <i class="fas fa-calendar-check"></i> Book Dermatology Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OB/GYN Department -->
+    <section class="department-section py-5 bg-light" id="obgyn">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="department-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&h=400&fit=crop" alt="OB/GYN Department" class="img-fluid rounded-lg department-img">
+                        <div class="department-badge">
+                            <i class="fas fa-female"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="department-content">
+                        <h2 class="department-title">OB/GYN - Women's Health</h2>
+                        <p class="department-description">Our Women's Health Department provides comprehensive obstetric and gynecological care throughout every stage of a woman's life. From routine check-ups to complex procedures, we prioritize your health and comfort.</p>
+                        
+                        <div class="department-services">
+                            <h5>Services Offered:</h5>
+                            <div class="services-grid">
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Prenatal & Maternity Care</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> High-Risk Pregnancy</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Gynecological Exams</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Family Planning</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Menopause Management</div>
+                                <div class="service-item"><i class="fas fa-check-circle"></i> Minimally Invasive Surgery</div>
+                            </div>
+                        </div>
+
+                        <div class="department-facilities">
+                            <h5>Facilities:</h5>
+                            <p>Modern birthing suites, advanced ultrasound imaging, dedicated labor and delivery unit, neonatal care facilities, and comfortable private recovery rooms.</p>
+                        </div>
+
+                        <div class="department-team">
+                            <h5>Meet Our Team:</h5>
+                            <div class="team-avatars">
+                                <div class="team-avatar">
+                                    <img src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?w=100&h=100&fit=crop" alt="Dr. Maria Garcia">
+                                    <span>Dr. Maria Garcia</span>
+                                </div>
+                                <div class="team-avatar">
+                                    <img src="https://images.unsplash.com/photo-1614608682850-e0d6ed316d47?w=100&h=100&fit=crop" alt="Dr. Jennifer Lee">
+                                    <span>Dr. Jennifer Lee</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="appointment.html" class="btn btn-primary-custom mt-4">
+                            <i class="fas fa-calendar-check"></i> Book OB/GYN Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Departments Quick Links -->
+    <section class="departments-quick py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">All Departments at a Glance</h2>
+                <p class="section-subtitle">Quick access to all our medical specialties</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#cardiology" class="department-quick-card">
+                        <div class="quick-card-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h5>Cardiology</h5>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#neurology" class="department-quick-card">
+                        <div class="quick-card-icon"><i class="fas fa-brain"></i></div>
+                        <h5>Neurology</h5>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#orthopedics" class="department-quick-card">
+                        <div class="quick-card-icon"><i class="fas fa-bone"></i></div>
+                        <h5>Orthopedics</h5>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#pediatrics" class="department-quick-card">
+                        <div class="quick-card-icon"><i class="fas fa-baby"></i></div>
+                        <h5>Pediatrics</h5>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#dermatology" class="department-quick-card">
+                        <div class="quick-card-icon"><i class="fas fa-hand-sparkles"></i></div>
+                        <h5>Dermatology</h5>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#obgyn" class="department-quick-card">
+                        <div class="quick-card-icon"><i class="fas fa-female"></i></div>
+                        <h5>OB/GYN</h5>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="emergency.html" class="department-quick-card emergency-card">
+                        <div class="quick-card-icon"><i class="fas fa-ambulance"></i></div>
+                        <h5>Emergency Care</h5>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="services.html" class="department-quick-card">
+                        <div class="quick-card-icon"><i class="fas fa-microscope"></i></div>
+                        <h5>Laboratory</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Need Help Choosing a Department?</h2>
+                    <p>Our patient coordinators are here to guide you to the right specialist based on your symptoms and needs.</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="appointment.html" class="btn btn-cta-primary">
+                        <i class="fas fa-calendar-check"></i> Book Appointment
+                    </a>
+                    <a href="tel:5551234567" class="btn btn-cta-secondary">
+                        <i class="fas fa-phone-alt"></i> Call Us Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <a class="footer-brand" href="index.html">
+                            <div class="brand-logo">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <span class="brand-text">HealthCare <span class="brand-accent">Clinic</span></span>
+                        </a>
+                        <p>Providing exceptional healthcare services with compassion and expertise for over 25 years. Your health is our top priority.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="departments.html">Departments</a></li>
+                            <li><a href="emergency.html">Emergency Care</a></li>
+                            <li><a href="appointment.html">Book Appointment</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h5>Our Departments</h5>
+                        <ul>
+                            <li><a href="#cardiology">Cardiology</a></li>
+                            <li><a href="#neurology">Neurology</a></li>
+                            <li><a href="#orthopedics">Orthopedics</a></li>
+                            <li><a href="#pediatrics">Pediatrics</a></li>
+                            <li><a href="#dermatology">Dermatology</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h5>Contact Info</h5>
+                        <ul>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>123 Medical Avenue<br>Health City, HC 12345</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <span>(555) 123-4567</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>info@healthcareclinic.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Mon-Fri: 8AM - 6PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 HealthCare Clinic. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
