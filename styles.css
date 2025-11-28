@@ -2978,40 +2978,987 @@ a {
     }
 }
 
+/* =====================================================
+   CONTACT PAGE STYLES
+   ===================================================== */
+
+/* Contact Info Cards */
+.info-card {
+    background: var(--white);
+    padding: 30px 25px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    height: 100%;
+    border: 1px solid var(--gray-200);
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.info-card .info-icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.info-card h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: var(--text-medium);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Hours Card */
+.hours-card {
+    background: var(--white);
+    padding: 35px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+}
+
+.hours-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 20px;
+}
+
+.hours-day {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 15px;
+}
+
+.hours-time {
+    text-align: right;
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* Map Container */
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Contact Form */
+.contact-form {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    font-size: 15px;
+    transition: var(--transition);
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.1);
+}
+
+.contact-form .btn-accent {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: var(--white);
+    border: none;
+    padding: 14px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--radius-xl);
+    box-shadow: 0 4px 15px rgba(0, 119, 182, 0.3);
+    transition: var(--transition);
+}
+
+.contact-form .btn-accent:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4);
+}
+
+/* =====================================================
+   APPOINTMENT PAGE STYLES
+   ===================================================== */
+
+.appointment-section {
+    background: var(--gray-50);
+}
+
+.appointment-form {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+}
+
+.form-section {
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.form-section:last-of-type {
+    border-bottom: none;
+}
+
+.form-section-title {
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-section-title::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 24px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: 2px;
+}
+
+.age-display {
+    color: var(--primary);
+    font-weight: 500;
+    margin-top: 5px;
+}
+
 /* ============================================
-   MOBILE RESPONSIVE STYLES
+   COMPREHENSIVE RESPONSIVE STYLES
+   Mobile-First Approach with Enhanced Breakpoints
    ============================================ */
 
-/* Tablet and below (992px) */
-@media (max-width: 991px) {
-    /* Top Bar */
+/* ----------------------------------------
+   Touch Target Size - Minimum 44px × 44px
+   ---------------------------------------- */
+.btn,
+.nav-link,
+.footer-social a,
+.top-bar-right a,
+.doctor-social a,
+.back-to-top,
+.navbar-toggler {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/* Ensure links in navigation have proper touch targets */
+.nav-link {
+    padding: 12px 18px !important;
+}
+
+/* ----------------------------------------
+   Small phones (320px - 575px)
+   ---------------------------------------- */
+@media (max-width: 575px) {
+    /* Container padding */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Top Bar - Hide on small mobile */
     .top-bar {
+        display: none;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .brand-logo {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    .brand-text {
+        font-size: 18px;
+    }
+
+    .navbar-nav {
+        background: var(--white);
+        padding: 15px;
+        border-radius: var(--radius-lg);
+        margin-top: 15px;
+        box-shadow: var(--shadow);
+    }
+
+    .nav-item {
+        margin: 8px 0;
+    }
+
+    .btn-primary-custom {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    /* Hero Section */
+    .hero-section,
+    .hero-carousel,
+    .carousel-item,
+    .hero-content-wrapper {
+        min-height: 60vh;
+    }
+
+    .hero-content {
+        padding: 40px 0;
+    }
+
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: 8px 12px;
+        margin-bottom: 15px;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+        line-height: 1.25;
+        margin-bottom: 15px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 25px;
+        line-height: 1.6;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+
+    .btn-hero-primary,
+    .btn-hero-secondary {
+        width: 100%;
+        padding: 14px 24px;
+        font-size: 0.9rem;
+        justify-content: center;
+    }
+
+    /* Hero Stats - Stack vertically */
+    .hero-stats {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .hero-stat {
+        text-align: left;
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+    }
+
+    .stat-number {
+        font-size: 28px;
+    }
+
+    .stat-suffix {
+        font-size: 20px;
+    }
+
+    .stat-label {
         font-size: 12px;
+    }
+
+    /* Quick Info Section - Single column */
+    .quick-info-section {
+        margin-top: -30px;
+        padding-bottom: 40px;
+    }
+
+    .quick-info-grid {
+        grid-template-columns: 1fr;
+        border-radius: var(--radius);
+    }
+
+    .quick-info-card {
+        padding: 25px 20px;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .quick-info-card:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid var(--gray-200);
+    }
+
+    .quick-info-card.featured:not(:last-child) {
+        border-bottom-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .quick-info-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .quick-info-content h4 {
+        font-size: 16px;
+    }
+
+    .quick-info-content p {
+        font-size: 13px;
+    }
+
+    .emergency-number {
+        font-size: 18px !important;
+    }
+
+    /* Section Headers */
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-badge span {
+        padding: 6px 14px;
+        font-size: 11px;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+
+    /* About Section */
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-images {
+        order: -1;
+    }
+
+    .about-img-main img {
+        height: 280px;
+    }
+
+    .about-img-secondary {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        width: 150px;
+        margin-top: -50px;
+        margin-left: auto;
+    }
+
+    .about-img-secondary img {
+        height: 120px;
+    }
+
+    .about-experience-badge {
+        position: relative;
+        top: auto;
+        left: auto;
+        display: inline-block;
+        margin-top: 15px;
+        padding: 15px 20px;
+    }
+
+    .exp-number {
+        font-size: 28px;
+    }
+
+    .exp-text {
+        font-size: 10px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .about-features {
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .feature-check {
+        width: 36px;
+        height: 36px;
+    }
+
+    .feature-text h5 {
+        font-size: 14px;
+    }
+
+    .feature-text p {
+        font-size: 13px;
+    }
+
+    /* Services Section */
+    .services-section {
+        padding: 60px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 25px 20px;
+    }
+
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .service-card h4 {
+        font-size: 17px;
+    }
+
+    .service-card p {
+        font-size: 13px;
+    }
+
+    /* Why Choose Section */
+    .why-choose-section {
+        padding: 60px 0;
+    }
+
+    .why-choose-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .why-choose-image {
+        order: -1;
+    }
+
+    .wc-floating-card {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: -40px;
+        margin-left: 20px;
+        max-width: 200px;
+    }
+
+    .wc-feature {
+        gap: 12px;
+    }
+
+    .wc-feature-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .wc-feature-content h5 {
+        font-size: 15px;
+    }
+
+    .wc-feature-content p {
+        font-size: 13px;
+    }
+
+    /* Doctors Section */
+    .doctors-section {
+        padding: 60px 0;
+    }
+
+    .doctors-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .doctor-image img {
+        height: 250px;
+    }
+
+    .doctor-info {
+        padding: 20px 15px;
+    }
+
+    .doctor-info h4 {
+        font-size: 16px;
+    }
+
+    .doctor-specialty {
+        font-size: 12px;
+    }
+
+    .doctor-info p {
+        font-size: 12px;
+    }
+
+    /* Testimonials Section */
+    .testimonials-section {
+        padding: 60px 0;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        padding: 25px 20px;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-author img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .author-info h5 {
+        font-size: 14px;
+    }
+
+    .author-info span {
+        font-size: 12px;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        padding: 50px 0;
+    }
+
+    .cta-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        padding: 30px 20px;
+        border-radius: var(--radius);
+    }
+
+    .cta-text h2 {
+        font-size: 1.35rem;
+    }
+
+    .cta-text p {
+        font-size: 0.9rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .btn-cta-primary,
+    .btn-cta-secondary {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 24px;
+    }
+
+    /* Footer */
+    .footer-main {
+        padding: 50px 0 30px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .footer-brand {
+        justify-content: center;
+    }
+
+    .footer-about p {
+        font-size: 13px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-social a {
+        width: 44px;
+        height: 44px;
+    }
+
+    .footer-links h5,
+    .footer-contact h5 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .footer-links a {
+        font-size: 13px;
+    }
+
+    .footer-contact li {
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 13px;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-bottom-links {
+        gap: 20px;
+    }
+
+    /* Page Header */
+    .page-header {
+        padding: 50px 0 35px;
+    }
+
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .page-header p {
+        font-size: 0.9rem;
+    }
+
+    /* Forms */
+    .form-section-title {
+        font-size: 1.15rem;
+    }
+
+    .appointment-form,
+    .contact-form-section {
+        padding: 20px 15px;
+    }
+
+    .form-label {
+        font-size: 0.9rem;
+    }
+
+    .form-control,
+    .form-select {
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 12px;
+        min-height: 44px;
+    }
+
+    /* Emergency Page Specific */
+    .emergency-hero {
+        padding: 50px 0;
+    }
+
+    .emergency-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .emergency-contact-box {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .emergency-phone {
+        padding: 15px 20px;
+    }
+
+    .emergency-service-card {
+        padding: 25px 20px;
+    }
+
+    .service-icon-wrapper {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .symptom-item {
+        padding: 15px;
+    }
+
+    .response-time-badge {
+        left: 15px;
+        padding: 15px 20px;
+    }
+
+    .response-time-badge .time {
+        font-size: 28px;
+    }
+
+    .contact-card {
+        padding: 25px 20px;
+    }
+
+    .contact-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 22px;
+    }
+
+    .first-aid-card {
+        padding: 20px;
+    }
+
+    .emergency-cta-content {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .emergency-cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-emergency-primary,
+    .btn-emergency-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Department Page */
+    .department-img {
+        height: 250px;
+    }
+
+    .department-title {
+        font-size: 1.5rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-avatars {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Page Preview Sections */
+    .page-preview-section {
+        padding: 50px 0;
+    }
+
+    .page-preview-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .page-preview-grid.reverse {
+        flex-direction: column;
+    }
+
+    .page-preview-content .section-title {
+        font-size: 1.5rem;
+    }
+
+    .page-preview-image img {
+        height: 220px;
+    }
+
+    .preview-badge {
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+    }
+
+    /* Carousel controls hidden on small mobile */
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    .carousel-indicators {
+        bottom: 15px;
+    }
+
+    .carousel-indicators button {
+        width: 8px;
+        height: 8px;
+        margin: 0 4px;
+    }
+
+    .carousel-indicators button.active {
+        width: 24px;
+    }
+}
+
+/* ----------------------------------------
+   Large phones and small tablets (576px - 767px)
+   ---------------------------------------- */
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Top Bar - Show simplified */
+    .top-bar {
+        display: block;
+        font-size: 11px;
         padding: 8px 0;
     }
 
     .top-bar-content {
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
         text-align: center;
     }
 
     .top-bar-left {
-        flex-direction: column;
-        gap: 5px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Hero */
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    /* Quick Info - 1 column */
+    .quick-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-info-card:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid var(--gray-200);
+    }
+
+    /* About Grid */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    /* Services Grid - 2 columns */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Doctors Grid - 2 columns */
+    .doctors-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Testimonials - 1 column */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer - 2 columns */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        text-align: left;
+    }
+
+    .footer-about {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .footer-brand {
+        justify-content: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+/* ----------------------------------------
+   Tablets (768px - 991px)
+   ---------------------------------------- */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Top Bar */
+    .top-bar {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+    .top-bar-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .top-bar-left {
+        flex-direction: row;
+        gap: 20px;
     }
 
     /* Navbar */
-    .navbar-brand {
-        font-size: 1.2rem;
-    }
-
-    .brand-logo {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-    }
-
     .navbar-nav {
         background: var(--white);
         padding: 20px;
@@ -3027,16 +3974,20 @@ a {
     .btn-primary-custom {
         width: 100%;
         text-align: center;
-        margin-top: 10px;
+        justify-content: center;
+        margin-top: 15px;
     }
 
-    /* Hero Section */
-    .hero-section {
-        padding: 60px 0 40px;
+    /* Hero */
+    .hero-section,
+    .hero-carousel,
+    .carousel-item,
+    .hero-content-wrapper {
+        min-height: 70vh;
     }
 
     .hero-title {
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
 
     .hero-subtitle {
@@ -3044,412 +3995,231 @@ a {
     }
 
     .hero-buttons {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row;
     }
 
     .btn-hero-primary,
-    .btn-outline-custom {
-        width: 100%;
+    .btn-hero-secondary {
+        width: auto;
     }
 
-    /* Stats Section */
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+    .hero-stats {
+        flex-direction: row;
+        gap: 40px;
     }
 
-    /* Services Section */
+    /* Quick Info - 3 columns on tablet */
+    .quick-info-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .quick-info-card:not(:last-child) {
+        border-right: 1px solid var(--gray-200);
+        border-bottom: none;
+    }
+
+    /* About Grid - single column on tablet */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .about-images {
+        order: -1;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* Services Grid - 2 columns */
     .services-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
     }
 
-    /* Features Section */
-    .features-grid {
+    /* Why Choose Grid - single column */
+    .why-choose-grid {
         grid-template-columns: 1fr;
+        gap: 50px;
     }
 
-    /* Doctors Section */
+    .why-choose-image {
+        order: -1;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* Doctors Grid - 2 columns */
     .doctors-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
     }
 
-    /* Testimonials */
+    /* Testimonials - 2 columns */
     .testimonials-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
     }
 
-    /* CTA Section */
+    /* CTA */
     .cta-content {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
+        gap: 30px;
+        padding: 50px 40px;
     }
 
-    .cta-text h2 {
-        font-size: 1.8rem;
+    .cta-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* Footer - 2x2 grid */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .footer-about {
+        grid-column: 1 / -1;
+    }
+
+    /* Page Preview */
+    .page-preview-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .page-preview-grid.reverse {
+        flex-direction: column;
+    }
+
+    /* Carousel */
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 50px;
+        height: 50px;
+    }
+
+    .carousel-control-prev {
+        left: 20px;
+    }
+
+    .carousel-control-next {
+        right: 20px;
+    }
+}
+
+/* ----------------------------------------
+   Desktop (992px - 1199px)
+   ---------------------------------------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* About Grid - 2 columns */
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    /* Services Grid - 3 columns */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Why Choose Grid - 2 columns */
+    .why-choose-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    /* Doctors Grid - 3 columns */
+    .doctors-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Testimonials - 3 columns */
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* CTA */
+    .cta-content {
+        flex-direction: row;
+        padding: 50px 60px;
     }
 
     /* Footer */
     .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        text-align: center;
+        grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+        gap: 40px;
     }
 
-    .footer-social {
-        justify-content: center;
-    }
-
-    /* Page Header */
-    .page-header h1 {
-        font-size: 2rem;
-    }
-
-    .page-header p {
-        font-size: 1rem;
-    }
-
-    /* About Page */
-    .about-section h2 {
-        font-size: 2rem;
-    }
-
-    .philosophy-card {
-        margin-bottom: 20px;
-    }
-
-    /* Contact Page */
-    .contact-info-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-form-section {
-        padding: 40px 20px;
-    }
-
-    /* Appointment Form */
-    .appointment-form {
-        padding: 30px 20px;
-    }
-
-    /* Emergency Page */
-    .emergency-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .emergency-card {
-        margin-bottom: 20px;
-    }
-
-    /* Departments Page */
-    .departments-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* Page Preview Sections */
+    /* Page Preview */
     .page-preview-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+        flex-direction: row;
     }
 
     .page-preview-grid.reverse {
-        grid-template-columns: 1fr;
-    }
-
-    .page-preview-image {
-        order: -1;
-    }
-
-    /* Doctor Cards */
-    .doctors-section .doctor-card {
-        margin-bottom: 20px;
-    }
-
-    .doctors-section .doctor-image {
-        height: 280px;
+        flex-direction: row-reverse;
     }
 }
 
-/* Mobile (768px and below) */
-@media (max-width: 767px) {
-    /* Typography */
-    h1 {
-        font-size: 2rem;
+/* ----------------------------------------
+   Large Desktop (1200px and above)
+   ---------------------------------------- */
+@media (min-width: 1200px) {
+    /* About Grid */
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
     }
 
-    h2 {
-        font-size: 1.75rem;
+    /* Services Grid - 3 columns */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
     }
 
-    h3 {
-        font-size: 1.5rem;
+    /* Why Choose Grid */
+    .why-choose-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
     }
 
-    /* Top Bar - Hide on mobile */
-    .top-bar {
-        display: none;
+    /* Doctors Grid - 4 columns */
+    .doctors-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
     }
 
-    /* Hero Section */
-    .hero-title {
-        font-size: 1.75rem;
-        line-height: 1.3;
+    /* Testimonials - 3 columns */
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
     }
 
-    .hero-subtitle {
-        font-size: 0.95rem;
-    }
-
-    .hero-badge {
-        font-size: 0.85rem;
-        padding: 8px 16px;
-    }
-
-    /* Stats Section */
-    .stats-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .stat-card {
-        padding: 25px;
-    }
-
-    .stat-number {
-        font-size: 2rem;
-    }
-
-    /* Section Headers */
-    .section-title {
-        font-size: 1.75rem;
-    }
-
-    .section-subtitle {
-        font-size: 0.95rem;
-    }
-
-    /* Service Cards */
-    .service-card {
-        padding: 25px;
-    }
-
-    .service-icon {
-        font-size: 2.5rem;
-    }
-
-    /* Feature Cards */
-    .feature-card {
-        padding: 25px;
-    }
-
-    /* Doctor Cards */
-    .doctors-section .doctor-image {
-        height: 250px;
-    }
-
-    .doctors-section .doctor-info {
-        padding: 20px 15px;
-    }
-
-    .doctors-section .doctor-info h4 {
-        font-size: 1.25rem;
-    }
-
-    /* Testimonial Cards */
-    .testimonial-card {
-        padding: 25px;
-    }
-
-    .testimonial-text {
-        font-size: 0.95rem;
-    }
-
-    /* CTA Section */
-    .cta-section {
-        padding: 40px 0;
-    }
-
-    .cta-text h2 {
-        font-size: 1.5rem;
-    }
-
-    .cta-text p {
-        font-size: 0.95rem;
+    /* CTA */
+    .cta-content {
+        padding: 60px 80px;
     }
 
     /* Footer */
-    .footer {
-        padding: 40px 0 20px;
-    }
-
-    .footer h4 {
-        font-size: 1.25rem;
-    }
-
-    /* Page Header */
-    .page-header {
-        padding: 60px 0 40px;
-    }
-
-    .page-header h1 {
-        font-size: 1.75rem;
-    }
-
-    /* Forms */
-    .form-section-title {
-        font-size: 1.25rem;
-    }
-
-    .appointment-form,
-    .contact-form-section {
-        padding: 25px 15px;
-    }
-
-    /* Buttons */
-    .btn-hero-primary,
-    .btn-outline-custom,
-    .btn-primary-custom {
-        padding: 12px 25px;
-        font-size: 0.95rem;
-    }
-
-    /* Emergency Cards */
-    .emergency-card {
-        padding: 25px;
-    }
-
-    .emergency-icon {
-        font-size: 2.5rem;
-    }
-
-    /* Department Cards */
-    .department-card {
-        padding: 25px;
-    }
-
-    /* Map Section */
-    .map-container {
-        padding-bottom: 75%; /* Taller on mobile */
-    }
-
-    /* Hours Section */
-    .hours-table {
-        font-size: 0.9rem;
-    }
-
-    /* Emergency Navigation Link */
-    .navbar-nav .nav-item .nav-link[href="emergency.html"] {
-        justify-content: center;
-        margin: 10px 0;
+    .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+        gap: 50px;
     }
 }
 
-/* Small Mobile (576px and below) */
-@media (max-width: 575px) {
-    /* Container padding */
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    /* Hero Section */
-    .hero-section {
-        padding: 40px 0 30px;
-    }
-
-    .hero-title {
-        font-size: 1.5rem;
-    }
-
-    .hero-subtitle {
-        font-size: 0.9rem;
-    }
-
-    /* Stats */
-    .stat-number {
-        font-size: 1.75rem;
-    }
-
-    .stat-label {
-        font-size: 0.9rem;
-    }
-
-    /* Section Spacing */
-    section {
-        padding: 40px 0 !important;
-    }
-
-    /* Cards */
-    .service-card,
-    .feature-card,
-    .testimonial-card,
-    .emergency-card,
-    .department-card {
-        padding: 20px;
-    }
-
-    /* Buttons */
-    .hero-buttons {
-        gap: 10px;
-    }
-
-    .btn-hero-primary,
-    .btn-outline-custom {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-
-    /* Page Header */
-    .page-header {
-        padding: 50px 0 30px;
-    }
-
-    .page-header h1 {
-        font-size: 1.5rem;
-    }
-
-    .page-header p {
-        font-size: 0.9rem;
-    }
-
-    /* Forms */
-    .form-label {
-        font-size: 0.9rem;
-    }
-
-    .form-control,
-    .form-select {
-        font-size: 0.9rem;
-        padding: 10px;
-    }
-
-    /* Doctor Social Icons */
-    .doctors-section .doctor-social a {
-        width: 40px;
-        height: 40px;
-        font-size: 14px;
-    }
-
-    /* Preview Sections */
-    .preview-badge {
-        font-size: 0.85rem;
-        padding: 8px 15px;
-    }
-
-    /* Contact Info Cards */
-    .contact-info-card {
-        padding: 20px;
-    }
-
-    .contact-icon {
-        font-size: 2rem;
-    }
-}
-
-/* Landscape Mobile (orientation) */
+/* ----------------------------------------
+   Landscape Mobile (special case)
+   ---------------------------------------- */
 @media (max-height: 500px) and (orientation: landscape) {
-    .hero-section {
+    .hero-section,
+    .hero-carousel,
+    .carousel-item,
+    .hero-content-wrapper {
+        min-height: 100vh;
+    }
+
+    .hero-content {
         padding: 30px 0;
     }
 
@@ -3462,14 +4232,20 @@ a {
     }
 }
 
-/* Print Styles */
+/* ----------------------------------------
+   Print Styles
+   ---------------------------------------- */
 @media print {
     .navbar,
     .top-bar,
     .footer,
     .cta-section,
     .btn,
-    .hero-buttons {
+    .hero-buttons,
+    .back-to-top,
+    .carousel-control-prev,
+    .carousel-control-next,
+    .carousel-indicators {
         display: none !important;
     }
 
@@ -3481,5 +4257,53 @@ a {
     .page-header {
         background: none !important;
         color: #000 !important;
+    }
+
+    .hero-section {
+        min-height: auto;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+}
+
+/* ----------------------------------------
+   High Contrast / Accessibility
+   ---------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ----------------------------------------
+   Additional Touch-Friendly Enhancements
+   ---------------------------------------- */
+@media (hover: none) and (pointer: coarse) {
+    /* Touch devices - larger touch targets */
+    .nav-link {
+        padding: 14px 20px !important;
+    }
+
+    .footer-links a {
+        padding: 10px 0;
+        display: block;
+    }
+
+    .service-link {
+        padding: 12px 0;
+        display: inline-block;
+    }
+
+    /* Remove hover effects that don't work well on touch */
+    .service-card:hover,
+    .doctor-card:hover,
+    .testimonial-card:hover {
+        transform: none;
     }
 }
