@@ -1,5 +1,5 @@
 // Import jQuery
-const $ = require("jquery")
+const $ = window.jQuery
 
 $(document).ready(() => {
   // Contact form validation and submission
