@@ -1,4 +1,8 @@
-/* CSS Variables */
+/* PAGE: Home (global layout, navbar, hero, services, testimonials, CTA, footer) */
+/* PAGE: About (about-section, philosophy-section, page-header, values-list, doctors-section variants) */
+/* PAGE: Departments (departments-overview, department-section, department-quick-card, services-grid) */
+/* PAGE: Emergency (emergency-hero, emergency-services, when-to-visit, emergency-contact-section) */
+
 :root {
   --primary: #0077b6;
   --primary-dark: #005f8f;
@@ -14,7 +18,7 @@
   --gray-200: #e2e8f0;
   --gray-300: #cbd5e1;
   --success: #10b981;
-  /* Added danger and warning colors for emergency page */
+
   --danger: #dc3545;
   --warning: #f59e0b;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -28,7 +32,6 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +56,7 @@ h3,
 h4,
 h5,
 h6 {
-  /* Changed from Playfair Display to Sora for modern, professional look */
+
   font-family: "Sora", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
   line-height: 1.3;
@@ -69,7 +72,6 @@ a {
   transition: var(--transition);
 }
 
-/* Top Bar */
 .top-bar {
   background: var(--secondary);
   color: var(--white);
@@ -123,7 +125,6 @@ a {
   transform: translateY(-2px);
 }
 
-/* Navbar */
 .navbar {
   background: var(--white);
   padding: 15px 0;
@@ -162,7 +163,7 @@ a {
 }
 
 .brand-text {
-  /* Updated font to Sora for consistent modern branding */
+
   font-family: "Sora", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -234,7 +235,6 @@ a {
   transform: translateY(-2px);
 }
 
-/* Hero Section */
 .hero-section {
   position: relative;
   min-height: 90vh;
@@ -347,7 +347,7 @@ a {
 }
 
 .stat-number {
-  /* Updated to Sora font */
+
   font-family: "Sora", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 42px;
   font-weight: 700;
@@ -356,7 +356,7 @@ a {
 }
 
 .stat-suffix {
-  /* Updated to Sora font */
+
   font-family: "Sora", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -370,7 +370,6 @@ a {
   margin-top: 5px;
 }
 
-/* Quick Info Section */
 .quick-info-section {
   margin-top: -60px;
   position: relative;
@@ -380,7 +379,7 @@ a {
 
 .quick-info-grid {
   display: grid;
-  /* Made grid responsive: 1 col mobile, 2 col tablet, 3 col desktop */
+
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 0;
   box-shadow: var(--shadow-lg);
@@ -452,7 +451,6 @@ a {
   color: var(--white) !important;
 }
 
-/* Section Styles */
 .section-badge {
   display: inline-block;
   margin-bottom: 15px;
@@ -491,7 +489,6 @@ a {
   margin-bottom: 60px;
 }
 
-/* About Section */
 .about-section {
   padding: 100px 0;
   background: var(--white);
@@ -499,7 +496,7 @@ a {
 
 .about-grid {
   display: grid;
-  /* Made about grid responsive: 1 col mobile, 2 col desktop */
+
   grid-template-columns: 1fr;
   gap: 80px;
   align-items: center;
@@ -552,7 +549,7 @@ a {
 
 .exp-number {
   display: block;
-  /* Updated to Sora font */
+
   font-family: "Sora", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 36px;
   font-weight: 700;
@@ -610,7 +607,6 @@ a {
   margin: 0;
 }
 
-/* Services Section */
 .services-section {
   padding: 100px 0;
   background: var(--gray-50);
@@ -618,7 +614,7 @@ a {
 
 .services-grid {
   display: grid;
-  /* Made services grid responsive: 1 col mobile, 2 col tablet, 3 col desktop */
+
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
@@ -687,7 +683,6 @@ a {
   gap: 12px;
 }
 
-/* Why Choose Section */
 .why-choose-section {
   padding: 100px 0;
   background: var(--white);
@@ -695,7 +690,7 @@ a {
 
 .why-choose-grid {
   display: grid;
-  /* Made why-choose grid responsive: 1 col mobile, 2 col desktop */
+
   grid-template-columns: 1fr;
   gap: 80px;
   align-items: center;
@@ -784,7 +779,7 @@ a {
 
 .wc-card-number {
   display: block;
-  /* Updated to Sora font */
+
   font-family: "Sora", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 28px;
   font-weight: 700;
@@ -796,7 +791,6 @@ a {
   color: var(--text-light);
 }
 
-/* Doctors Section */
 .doctors-section {
   padding: 100px 0;
   background: var(--gray-50);
@@ -804,7 +798,7 @@ a {
 
 .doctors-grid {
   display: grid;
-  /* Made doctors grid responsive: 1 col mobile, 2 col tablet, 3 col large tablet, 4 col desktop */
+
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 30px;
 }
@@ -875,7 +869,7 @@ a {
 }
 
 .doctor-info h4 {
-  /* Updated to Sora font */
+
   font-family: "Sora", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -899,7 +893,6 @@ a {
   line-height: 1.6;
 }
 
-/* Testimonials Section */
 .testimonials-section {
   padding: 100px 0;
   background: linear-gradient(135deg, var(--secondary), var(--primary));
@@ -918,7 +911,7 @@ a {
 
 .testimonials-grid {
   display: grid;
-  /* Made testimonials grid responsive: 1 col mobile, 2 col tablet, 3 col desktop */
+
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   position: relative;
@@ -979,7 +972,6 @@ a {
   color: var(--text-light);
 }
 
-/* CTA Section */
 .cta-section {
   padding: 80px 0;
   background: var(--gray-50);
@@ -1070,7 +1062,6 @@ a {
   transform: translateY(-3px);
 }
 
-/* Footer */
 .footer {
   background: var(--text-dark);
   color: var(--white);
@@ -1082,7 +1073,7 @@ a {
 
 .footer-grid {
   display: grid;
-  /* Made footer grid responsive: 1 col mobile, 2 col tablet, 4 col desktop */
+
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 50px;
 }
@@ -1233,7 +1224,6 @@ a {
   color: var(--accent);
 }
 
-/* Back to Top */
 .back-to-top {
   position: fixed;
   bottom: 30px;
@@ -1262,9 +1252,6 @@ a {
   transform: translateY(-5px);
 }
 
-/*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
 .services .service-item {
   background-color: var(--surface-color);
   text-align: center;
@@ -1341,9 +1328,6 @@ a {
   color: var(--contrast-color);
 }
 
-/*--------------------------------------------------------------
-# Hero Carousel Styling
---------------------------------------------------------------*/
 .hero-carousel {
   position: relative;
   width: 100%;
@@ -1390,7 +1374,6 @@ a {
   align-items: center;
 }
 
-/* Carousel Controls */
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
@@ -1441,7 +1424,6 @@ a {
   filter: brightness(0) invert(1);
 }
 
-/* Carousel Indicators */
 .carousel-indicators {
   bottom: 40px;
   z-index: 10;
@@ -1472,7 +1454,6 @@ a {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-/* Animation for carousel content */
 .carousel-item .hero-content {
   animation: fadeInUp 0.8s ease-out;
 }
@@ -1519,7 +1500,6 @@ a {
   }
 }
 
-/* Responsive adjustments */
 @media (max-width: 992px) {
   .hero-carousel,
   .carousel-item,
@@ -1599,7 +1579,7 @@ a {
   .carousel-control-next {
     width: 40px;
     height: 40px;
-    display: none; /* Hide on very small screens */
+    display: none;
   }
 
   .carousel-indicators {
@@ -1611,7 +1591,6 @@ a {
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
-/* Appointment Form Buttons */
 .appointment-form .btn-accent {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   color: var(--white);
@@ -1742,7 +1721,6 @@ a {
   transform: scale(1.2) rotate(10deg);
 }
 
-/* Services Accordion Styles */
 .services-section .accordion {
   max-width: 900px;
   margin: 0 auto;
@@ -1824,7 +1802,6 @@ a {
   transform: translateX(5px);
 }
 
-/* About Page - Doctor Cards */
 .doctors-section .doctor-card {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -1910,7 +1887,7 @@ a {
 }
 
 .doctors-section .doctor-info h4 {
-  /* Updated to Sora font */
+
   font-family: "Sora", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -1961,7 +1938,6 @@ a {
   color: var(--white);
 }
 
-/* Philosophy Section */
 .philosophy-section {
   background: var(--white);
 }
@@ -2009,7 +1985,6 @@ a {
   margin: 0;
 }
 
-/* About Section - Story */
 .about-section h2 {
   font-size: 2.5rem;
   color: var(--text-dark);
@@ -2050,7 +2025,6 @@ a {
   font-size: 20px;
 }
 
-/* Page Header for About Page */
 .page-header {
   background: linear-gradient(135deg, var(--secondary), var(--primary));
   color: var(--white);
@@ -2069,15 +2043,10 @@ a {
   opacity: 0.9;
 }
 
-/* =====================================================
-   DEPARTMENTS PAGE STYLES
-   ===================================================== */
-
 .departments-overview {
   background: var(--white);
 }
 
-/* Department Section */
 .department-section {
   padding: 80px 0;
 }
@@ -2210,7 +2179,6 @@ a {
   color: var(--text-dark);
 }
 
-/* Departments Quick Links */
 .departments-quick {
   background: var(--gray-50);
 }
@@ -2288,11 +2256,6 @@ a {
   margin: 0;
 }
 
-/* =====================================================
-   EMERGENCY PAGE STYLES
-   ===================================================== */
-
-/* Emergency Hero */
 .emergency-hero {
   background: linear-gradient(135deg, var(--secondary), var(--primary));
   padding: 80px 0;
@@ -2387,7 +2350,6 @@ a {
   box-shadow: var(--shadow-lg);
 }
 
-/* Emergency Services */
 .emergency-services {
   background: var(--white);
 }
@@ -2443,7 +2405,6 @@ a {
   margin: 0;
 }
 
-/* When to Visit Section */
 .when-to-visit {
   background: var(--gray-50);
 }
@@ -2519,7 +2480,7 @@ a {
 
 .response-time-badge .time {
   display: block;
-  /* Updated to Sora font */
+
   font-family: "Sora", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 36px;
   font-weight: 700;
@@ -2531,7 +2492,6 @@ a {
   letter-spacing: 1px;
 }
 
-/* Emergency Contact Section */
 .emergency-contact-section {
   background: var(--white);
 }
@@ -2609,7 +2569,6 @@ a {
   font-weight: 600;
 }
 
-/* First Aid Section */
 .first-aid-section {
   background: var(--gray-50);
 }
@@ -2667,7 +2626,6 @@ a {
   margin-bottom: 0;
 }
 
-/* Ambulance Section */
 .ambulance-section {
   background: var(--white);
 }
@@ -2715,7 +2673,6 @@ a {
   margin: 0;
 }
 
-/* Emergency CTA Section */
 .emergency-cta-section {
   background: linear-gradient(135deg, var(--danger), #ff6b6b);
   padding: 60px 0;
@@ -2812,11 +2769,6 @@ a {
   transform: translateY(-3px);
 }
 
-/* ============================================
-   PAGE PREVIEW SECTIONS (Departments & Emergency on Landing Page)
-   ============================================ */
-
-/* Adding missing styles for the page preview sections with proper flexbox layout */
 .page-preview-section {
   padding: 80px 0;
   background: #fff;
@@ -2938,7 +2890,6 @@ a {
   color: #fff;
 }
 
-/* Emergency Contact CTA */
 .emergency-contact-cta {
   display: flex;
   gap: 15px;
@@ -2963,7 +2914,6 @@ a {
   transform: translateY(-2px);
 }
 
-/* Responsive styles for page preview sections */
 @media (max-width: 992px) {
   .page-preview-grid {
     flex-direction: column;
@@ -3006,7 +2956,6 @@ a {
   }
 }
 
-/* Emergency Navigation Link - Special Styling */
 .emergency {
   background: linear-gradient(135deg, #dc3545, #c82333);
   color: var(--white) !important;
@@ -3038,11 +2987,11 @@ a {
   box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
   margin-left: auto;
   white-space: nowrap;
-  
+
 }
 
 .emergency::before {
-  content: "\f0f9"; /* Font Awesome ambulance icon */
+  content: "\f0f9";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   font-size: 14px;
@@ -3060,7 +3009,7 @@ a {
   animation: pulse 2s infinite;
 }
 .emergency1::before {
-  content: "\f0f9"; /* Font Awesome ambulance icon */
+  content: "\f0f9";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   font-size: 14px;
@@ -3099,7 +3048,6 @@ a {
   }
 }
 
-/* Responsive adjustments for mobile */
 @media (max-width: 991px) {
   .navbar-nav .nav-item .nav-link[href="emergency.html"] {
     justify-content: center;
@@ -3107,18 +3055,12 @@ a {
   }
 }
 
-/* ============================================
-   MOBILE RESPONSIVE STYLES
-   ============================================ */
-
-/* Tablets (992px - 1200px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  /* Adjustments for tablets */
+
 }
 
-/* Large Mobile / Small Tablet (768px - 991px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  /* Top Bar */
+
   .top-bar {
     font-size: 12px;
     padding: 8px 0;
@@ -3137,7 +3079,6 @@ a {
     gap: 5px;
   }
 
-  /*Navbar */
   .navbar-brand {
     font-size: 1.2rem;
   }
@@ -3175,14 +3116,12 @@ a {
     margin-top: 10px;
     margin-left: 15px !important;
   }
-  
 
   .btn-primary-custom.ms-lg-3 {
     margin-left: 15px !important;
     white-space: nowrap;
   }
 
-  /* Hero Section */
   .hero-section {
     padding: 60px 0 40px;
   }
@@ -3205,34 +3144,28 @@ a {
     width: 100%;
   }
 
-  /* Stats Section */
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
-  /* Services Section */
   .services-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  /* Features Section */
   .features-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Doctors Section */
   .doctors-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Testimonials */
   .testimonials-grid {
     grid-template-columns: 1fr;
   }
 
-  /* CTA Section */
   .cta-content {
     flex-direction: column;
     text-align: center;
@@ -3243,7 +3176,6 @@ a {
     font-size: 1.8rem;
   }
 
-  /* Footer */
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -3254,7 +3186,6 @@ a {
     justify-content: center;
   }
 
-  /* Page Header */
   .page-header h1 {
     font-size: 2rem;
   }
@@ -3263,7 +3194,6 @@ a {
     font-size: 1rem;
   }
 
-  /* About Page */
   .about-section h2 {
     font-size: 2rem;
   }
@@ -3272,7 +3202,6 @@ a {
     margin-bottom: 20px;
   }
 
-  /* Contact Page */
   .contact-info-grid {
     grid-template-columns: 1fr;
   }
@@ -3281,12 +3210,10 @@ a {
     padding: 40px 20px;
   }
 
-  /* Appointment Form */
   .appointment-form {
     padding: 30px 20px;
   }
 
-  /* Emergency Page */
   .emergency-grid {
     grid-template-columns: 1fr;
   }
@@ -3295,12 +3222,10 @@ a {
     margin-bottom: 20px;
   }
 
-  /* Departments Page */
   .departments-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Page Preview Sections */
   .page-preview-grid {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -3314,7 +3239,6 @@ a {
     order: -1;
   }
 
-  /* Doctor Cards */
   .doctors-section .doctor-card {
     margin-bottom: 20px;
   }
@@ -3331,9 +3255,8 @@ a {
   }
 }
 
-/* Mobile (max-width 767px) */
 @media (max-width: 767.98px) {
-  /* Typography */
+
   h1 {
     font-size: 2rem;
   }
@@ -3346,12 +3269,10 @@ a {
     font-size: 1.5rem;
   }
 
-  /* Top Bar - Hide on mobile */
   .top-bar {
     display: none;
   }
 
-  /* Hero Section */
   .hero-title {
     font-size: 1.75rem;
     line-height: 1.3;
@@ -3367,7 +3288,6 @@ a {
     padding: 6px 12px;
   }
 
-  /* Stats Section */
   .stats-grid {
     grid-template-columns: 1fr;
   }
@@ -3380,7 +3300,6 @@ a {
     font-size: 2rem;
   }
 
-  /* Section Headers */
   .section-title {
     font-size: 1.75rem;
   }
@@ -3389,7 +3308,6 @@ a {
     font-size: 0.95rem;
   }
 
-  /* Service Cards */
   .service-card {
     padding: 25px;
   }
@@ -3398,12 +3316,10 @@ a {
     font-size: 2.5rem;
   }
 
-  /* Feature Cards */
   .feature-card {
     padding: 25px;
   }
 
-  /* Doctor Cards */
   .doctors-section .doctor-image {
     height: 250px;
   }
@@ -3416,7 +3332,6 @@ a {
     font-size: 1.25rem;
   }
 
-  /* Testimonial Cards */
   .testimonial-card {
     padding: 25px;
   }
@@ -3438,7 +3353,6 @@ a {
     font-size: 12px;
   }
 
-  /* CTA Section */
   .cta-section {
     padding: 40px 0;
   }
@@ -3451,7 +3365,6 @@ a {
     font-size: 0.95rem;
   }
 
-  /* Footer */
   .footer {
     padding: 40px 0 20px;
   }
@@ -3460,7 +3373,6 @@ a {
     font-size: 1.25rem;
   }
 
-  /* Page Header */
   .page-header {
     padding: 60px 0 40px;
   }
@@ -3469,7 +3381,6 @@ a {
     font-size: 1.75rem;
   }
 
-  /* Forms */
   .form-section-title {
     font-size: 1.25rem;
   }
@@ -3479,7 +3390,6 @@ a {
     padding: 25px 15px;
   }
 
-  /* Buttons */
   .btn-app,
   .btn-outline-custom,
   .btn-primary-custom {
@@ -3487,7 +3397,6 @@ a {
     font-size: 0.95rem;
   }
 
-  /* Emergency Cards */
   .emergency-card {
     padding: 25px;
   }
@@ -3496,37 +3405,31 @@ a {
     font-size: 2.5rem;
   }
 
-  /* Department Cards */
   .department-card {
     padding: 25px;
   }
 
-  /* Map Section */
   .map-container {
-    padding-bottom: 75%; /* Taller on mobile */
+    padding-bottom: 75%;
   }
 
-  /* Hours Section */
   .hours-table {
     font-size: 0.9rem;
   }
 
-  /* Emergency Navigation Link */
   .navbar-nav .nav-item .nav-link[href="emergency.html"] {
     justify-content: center;
     margin: 10px 0;
   }
 }
 
-/* Small Mobile (max-width 576px) */
 @media (max-width: 575.98px) {
-  /* Container padding */
+
   .container {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  /* Navbar */
   .navbar-brand {
     gap: 8px;
   }
@@ -3546,7 +3449,6 @@ a {
     font-size: 13px;
   }
 
-  /* Hero Section */
   .hero-section {
     min-height: 60vh;
     padding: 20px 0;
@@ -3580,7 +3482,6 @@ a {
     font-size: 12px;
   }
 
-  /* Stats */
   .stat-number {
     font-size: 1.75rem;
   }
@@ -3589,12 +3490,10 @@ a {
     font-size: 0.9rem;
   }
 
-  /* Section Spacing */
   section {
     padding: 40px 0 !important;
   }
 
-  /* Cards */
   .service-card,
   .feature-card,
   .testimonial-card,
@@ -3603,12 +3502,10 @@ a {
     padding: 20px;
   }
 
-  /* Buttons */
   .hero-buttons {
     gap: 10px;
   }
 
-  /* Page Header */
   .page-header {
     padding: 50px 0 30px;
   }
@@ -3617,7 +3514,6 @@ a {
     font-size: 1.5rem;
   }
 
-  /* Forms */
   .form-label {
     font-size: 0.9rem;
   }
@@ -3628,20 +3524,17 @@ a {
     padding: 10px;
   }
 
-  /* Doctor Social Icons */
   .doctors-section .doctor-social a {
     width: 40px;
     height: 40px;
     font-size: 14px;
   }
 
-  /* Preview Sections */
   .preview-badge {
     font-size: 0.85rem;
     padding: 8px 15px;
   }
 
-  /* Contact Info Cards */
   .contact-info-card {
     padding: 20px;
   }
@@ -3651,7 +3544,6 @@ a {
   }
 }
 
-/* Landscape Mobile (orientation) */
 @media (max-height: 500px) and (orientation: landscape) {
   .hero-section {
     padding: 30px 0;
@@ -3666,7 +3558,6 @@ a {
   }
 }
 
-/* Print Styles */
 @media print {
   .navbar,
   .top-bar,
@@ -3687,10 +3578,6 @@ a {
     color: #000 !important;
   }
 }
-
-/* ===============================
-   Contact Page – Info cards + Hours
-   =============================== */
 
 .contact-info-section .info-card {
   position: relative;
@@ -3751,7 +3638,6 @@ a {
   margin: 0;
 }
 
-/* Hours card */
 .hours-card {
   background: var(--white);
   border: 1px solid var(--gray-200);
@@ -3777,7 +3663,7 @@ a {
 }
 
 .hours-day::before {
-  content: "\f017"; /* clock */
+  content: "\f017";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   width: 28px; height: 28px;
@@ -3793,9 +3679,8 @@ a {
   font-weight: 600;
 }
 
-/* Emergency row highlight */
 .hours-day.urgent::before {
-  content: "\f0f9"; /* ambulance */
+  content: "\f0f9";
   background: rgba(220,53,69,.12);
   color: var(--danger);
 }
@@ -3806,14 +3691,12 @@ a {
   font-weight: 800;
 }
 
-/* Responsive tweaks */
 @media (max-width: 575.98px) {
   .hours-card { padding: 22px; }
   .hours-day { font-size: 15px; }
   .hours-time { font-size: 15px; }
 }
 
-/* About Preview (matches department preview style) */
 .about-preview .page-preview-image img {
     aspect-ratio: 16/10;
     object-fit: cover;
@@ -3856,7 +3739,6 @@ a {
     font-size: 16px;
 }
 
-/* Why Choose Preview (aligned with other preview sections) */
 .why-choose-preview .page-preview-image img {
   aspect-ratio: 16 / 10;
   object-fit: cover;
@@ -3908,7 +3790,6 @@ a {
   font-size: 16px;
 }
 
-/* Mobile stacking (if not already covered globally) */
 @media (max-width: 991px) {
   .why-choose-preview .page-preview-grid {
     grid-template-columns: 1fr;
@@ -3918,9 +3799,6 @@ a {
     order: -1;
   }
 }
-/* ===============================
-   Contact Form Styling
-   =============================== */
 
 .contact-form-section {
   background: var(--gray-50);
@@ -4065,7 +3943,6 @@ a {
   box-shadow: 0 2px 10px rgba(108, 117, 125, 0.3);
 }
 
-/* Feedback Form Specific Styles */
 .feedback-container {
   background: linear-gradient(135deg, rgba(0, 119, 182, 0.02), rgba(0, 180, 216, 0.02));
 }
@@ -4075,7 +3952,6 @@ a {
   color: var(--text-dark);
 }
 
-/* Alert Styles */
 .alert {
   border-radius: var(--radius);
   border: none;
@@ -4109,7 +3985,6 @@ a {
   opacity: 1;
 }
 
-/* Responsive */
 @media (max-width: 991px) {
   .form-container {
     padding: 30px 25px;
