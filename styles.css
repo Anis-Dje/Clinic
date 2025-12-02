@@ -2528,6 +2528,7 @@ a {
   padding: 35px 25px;
   background: var(--gray-50);
   border-radius: var(--radius-lg);
+  align-items: center;
   transition: var(--transition);
   height: 100%;
 }
@@ -2775,7 +2776,7 @@ a {
 .btn-emergency-primary:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-lg);
-  color: var(--danger);
+  color: White;
 }
 
 .btn-emergency-secondary {
@@ -3010,6 +3011,23 @@ a {
   white-space: nowrap;
 }
 
+.emergency1 {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: var(--white) !important;
+  padding: 8px 80px;
+  border-radius: var(--radius-xl);
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+  margin-left: auto;
+  white-space: nowrap;
+  
+}
+
 .emergency::before {
   content: "\f0f9"; /* Font Awesome ambulance icon */
   font-family: "Font Awesome 6 Free";
@@ -3018,6 +3036,24 @@ a {
 }
 
 .emergency::after {
+  content: "24/7";
+  font-size: 10px;
+  background: var(--white);
+  color: #dc3545;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  margin-left: 5px;
+  animation: pulse 2s infinite;
+}
+.emergency1::before {
+  content: "\f0f9"; /* Font Awesome ambulance icon */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.emergency1::after {
   content: "24/7";
   font-size: 10px;
   background: var(--white);
@@ -3118,6 +3154,15 @@ a {
     margin-top: 10px;
     margin-left: 15px !important;
   }
+  .btn-primary-custom1 {
+    width: 100%;
+    text-align: center;
+    Background: linear-gradient(135deg, #dc3545, #c82333);
+    color : var(--white) !important;
+    margin-top: 10px;
+    margin-left: 15px !important;
+  }
+  
 
   .btn-primary-custom.ms-lg-3 {
     margin-left: 15px !important;
