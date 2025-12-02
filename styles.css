@@ -302,26 +302,6 @@ a {
   margin-bottom: 50px;
 }
 
-.btn-hero-primary {
-  background: var(--white);
-  color: var(--primary);
-  padding: 16px 32px;
-  border-radius: var(--radius-xl);
-  font-weight: 600;
-  font-size: 16px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  transition: var(--transition);
-  box-shadow: var(--shadow-md);
-}
-
-.btn-hero-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
-  color: var(--primary);
-}
-
 .btn-hero-secondary {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
@@ -841,13 +821,9 @@ a {
 
 .doctor-image img {
   width: 100%;
-  height: 280px;
-  object-fit: cover;
-  transition: var(--transition);
-}
-
-.doctor-card:hover .doctor-image img {
-  transform: scale(1.05);
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .doctor-social {
@@ -1037,6 +1013,24 @@ a {
   transition: var(--transition);
 }
 
+.btn-app {
+  background: var(--white);
+  color: var(--primary);
+  padding: 16px 30px;
+  border-radius: var(--radius-xl);
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition);
+}
+.btn-app:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  color: var(--primary);
+  background: var(--white);
+}
 .btn-cta-primary:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-lg);
@@ -1633,8 +1627,27 @@ a {
 .appointment-form .btn-accent:hover::before {
   left: 100%;
 }
+.contact-form .btn-accent {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 119, 182, 0.3);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
 
 .appointment-form .btn-accent:hover {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary) 100%);
+  box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4);
+  transform: translateY(-2px);
+}
+
+.contact-form .btn-accent:hover {
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary) 100%);
   box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4);
   transform: translateY(-2px);
@@ -1657,7 +1670,25 @@ a {
   transition: var(--transition);
 }
 
+.contact-form .btn-outline-secondary {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+  color: var(--white);
+  border: 2px solid transparent;
+  padding: 14px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(108, 117, 125, 0.3);
+  transition: var(--transition);
+}
+
 .appointment-form .btn-outline-secondary:hover {
+  background: linear-gradient(135deg, #5a6268 0%, #343a40 100%);
+  box-shadow: 0 6px 20px rgba(108, 117, 125, 0.4);
+  transform: translateY(-2px);
+  border-color: #495057;
+}
+.contact-form .btn-outline-secondary:hover {
   background: linear-gradient(135deg, #5a6268 0%, #343a40 100%);
   box-shadow: 0 6px 20px rgba(108, 117, 125, 0.4);
   transform: translateY(-2px);
@@ -1805,13 +1836,9 @@ a {
 
 .doctors-section .doctor-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.doctors-section .doctor-card:hover .doctor-image img {
-  transform: scale(1.1);
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .doctors-section .doctor-overlay {
@@ -2752,7 +2779,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 255, 0.3);
   transition: var(--transition);
 }
 
@@ -2898,10 +2925,9 @@ a {
 .btn-emergency {
   background: var(--danger);
   color: #fff;
-  border: none;
   padding: 12px 24px;
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: 400;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -3095,7 +3121,7 @@ a {
     gap: 15px;
   }
 
-  .btn-hero-primary,
+  .btn-app,
   .btn-outline-custom {
     width: 100%;
   }
@@ -3368,7 +3394,7 @@ a {
   }
 
   /* Buttons */
-  .btn-hero-primary,
+  .btn-app,
   .btn-outline-custom,
   .btn-primary-custom {
     padding: 12px 25px;
@@ -3462,7 +3488,7 @@ a {
     flex-direction: column;
   }
 
-  .btn-hero-primary,
+  .btn-app,
   .btn-hero-secondary {
     padding: 10px 16px;
     font-size: 12px;
@@ -3804,5 +3830,247 @@ a {
   }
   .why-choose-preview .page-preview-image {
     order: -1;
+  }
+}
+/* ===============================
+   Contact Form Styling
+   =============================== */
+
+.contact-form-section {
+  background: var(--gray-50);
+}
+
+.form-container {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 35px 30px;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  border: 1px solid var(--gray-200);
+  height: 100%;
+}
+
+.form-container:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-light);
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--gray-200);
+}
+
+.form-header i {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 24px;
+}
+
+.form-header h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-control,
+.form-select {
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  font-size: 14px;
+  transition: var(--transition);
+  background-color: var(--white);
+  color: var(--text-dark);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.1);
+  background-color: var(--white);
+}
+
+.form-control::placeholder {
+  color: var(--text-light);
+}
+
+.invalid-feedback {
+  display: block;
+  color: var(--danger);
+  font-size: 13px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.form-buttons .btn {
+  flex: 1;
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: var(--radius-lg);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.btn-accent {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 119, 182, 0.3);
+}
+
+.btn-accent:hover {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary) 100%);
+  box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4);
+  transform: translateY(-2px);
+  color: var(--white);
+}
+
+.btn-accent:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(0, 119, 182, 0.3);
+}
+
+.btn-outline-secondary {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+  color: var(--white);
+  border: 2px solid transparent;
+  box-shadow: 0 4px 15px rgba(108, 117, 125, 0.3);
+}
+
+.btn-outline-secondary:hover {
+  background: linear-gradient(135deg, #5a6268 0%, #343a40 100%);
+  box-shadow: 0 6px 20px rgba(108, 117, 125, 0.4);
+  transform: translateY(-2px);
+  color: var(--white);
+}
+
+.btn-outline-secondary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(108, 117, 125, 0.3);
+}
+
+/* Feedback Form Specific Styles */
+.feedback-container {
+  background: linear-gradient(135deg, rgba(0, 119, 182, 0.02), rgba(0, 180, 216, 0.02));
+}
+
+.feedback-form .form-select option {
+  background: var(--white);
+  color: var(--text-dark);
+}
+
+/* Alert Styles */
+.alert {
+  border-radius: var(--radius);
+  border: none;
+  padding: 15px 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.alert-success {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));
+  color: #065f46;
+  border-left: 4px solid var(--success);
+}
+
+.alert-danger {
+  background: linear-gradient(135deg, rgba(220, 53, 69, 0.1), rgba(220, 53, 69, 0.05));
+  color: #721c24;
+  border-left: 4px solid var(--danger);
+}
+
+.alert strong {
+  font-weight: 700;
+}
+
+.btn-close {
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .form-container {
+    padding: 30px 25px;
+  }
+
+  .form-header {
+    margin-bottom: 25px;
+  }
+
+  .form-header i {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .form-header h3 {
+    font-size: 20px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .form-buttons .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 25px 20px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-buttons .btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .form-control,
+  .form-select {
+    padding: 10px 14px;
+    font-size: 13px;
   }
 }

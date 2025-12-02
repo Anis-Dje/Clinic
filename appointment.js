@@ -4,22 +4,26 @@ const $ = window.$
 $(document).ready(() => {
     // Doctor mapping based on service selection
     const doctorsByService = {
-        general: ["Any Available Doctor", "Dr. James Wilson"],
-        pediatric: ["Any Available Doctor", "Dr. Michael Torres"],
-        dental: ["Any Available Doctor"],
-        physiotherapy: ["Any Available Doctor"],
-        vaccination: ["Any Available Doctor", "Dr. James Wilson", "Dr. Michael Torres"],
-        lab: ["Any Available Doctor"],
+        general: ["Any Available Doctor", "Dr. Moujib Ourzifi"],
+        pediatric: ["Any Available Doctor", "Dr. Youcef Ait Nouri"],
+        dental: ["Any Available Doctor", "Dr. Riad Mammeri"],
+        physiotherapy: ["Any Available Doctor","Bennacer Skendar"],
+        vaccination: ["Any Available Doctor", "Dr. Ibtissem Adem"],
+        lab: ["Any Available Doctor","Dahmen Djeghri"],
         followup: [
             "Any Available Doctor",
-            "Dr. James Wilson",
-            "Dr. Sarah Anderson",
-            "Dr. Michael Torres",
-            "Dr. Emily Chen",
-            "Dr. Maria Garcia",
-            "Dr. David Lee",
+            "Dr. Moujib Ourzifi",
+            "Dr. Youcef Ait Nouri",
+            "Dr. Riad Mammeri",
+            "Dr. Bennacer Skendar",
+            "Dr. Ibtissem Adem",
+            "Dahmen Djeghri",
+            "Dr. Maria Benazzouz",
+            "Dr. Bouafia Yousra",
+            "Dr. Mejdoub Mustapha",
+
         ],
-        special: ["Any Available Doctor", "Dr. Sarah Anderson", "Dr. Emily Chen", "Dr. Maria Garcia"],
+        special: ["Any Available Doctor", "Dr. Maria Benazzouz", "Dr. Bouafia Yousra", "Dr. Mejdoub Mustapha"],
     }
 
     $("#preferredDate").prop("disabled", true).prop("required", false) // ensure field is not required when disabled

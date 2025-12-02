@@ -1,5 +1,5 @@
-const $ = window.jQuery // Declare the jQuery variable
-const bootstrap = window.bootstrap // Declare the bootstrap variable
+const $ = window.jQuery
+const bootstrap = window.bootstrap
 
 $(document).ready(() => {
   // Navbar link hover effects
