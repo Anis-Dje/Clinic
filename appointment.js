@@ -6,7 +6,7 @@ $(document).ready(() => {
     const doctorsByService = {
         general: ["Any Available Doctor", "Dr. Moujib Ourzifi"],
         pediatric: ["Any Available Doctor", "Dr. Youcef Ait Nouri"],
-        dental: ["Any Available Doctor", "Dr. Riad Mammeri"],
+        dental: ["Any Available Doctor", "Dr. Mohamed Bicha"],
         physiotherapy: ["Any Available Doctor","Bennacer Skendar"],
         vaccination: ["Any Available Doctor", "Dr. Ibtissem Adem"],
         lab: ["Any Available Doctor","Dahmen Djeghri"],
@@ -14,7 +14,7 @@ $(document).ready(() => {
             "Any Available Doctor",
             "Dr. Moujib Ourzifi",
             "Dr. Youcef Ait Nouri",
-            "Dr. Riad Mammeri",
+            "Dr. Mohamed Bicha",
             "Dr. Bennacer Skendar",
             "Dr. Ibtissem Adem",
             "Dahmen Djeghri",

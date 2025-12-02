@@ -203,6 +203,10 @@ a {
   margin-left: 15px !important;
   margin-right: auto;
 }
+.btn-primary-custom.emergency {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: var(--white) !important;
+}
 
 .btn-primary-custom:hover {
   transform: translateY(-2px);
@@ -2243,11 +2247,20 @@ a {
   background: rgba(255, 255, 255, 0.2);
   color: var(--white);
 }
+.department-quick-card.emergency-card .quick-card-icon i {
+  color: white !important;
+}
 
 .department-quick-card.emergency-card h5 {
   color: var(--white);
 }
-
+.department-quick-card.emergency-card:hover .quick-card-icon {
+  background: linear-gradient(135deg, rgba(220, 53, 69, 0.25), rgba(220, 53, 69, 0.15));
+  color: var(--white) !important;
+}
+.department-quick-card.emergency-card:hover .quick-card-icon i {
+  color: var(--white) !important;
+}
 .quick-card-icon {
   width: 70px;
   height: 70px;
