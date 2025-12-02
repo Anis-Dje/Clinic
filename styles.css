@@ -129,6 +129,7 @@ a {
   padding: 15px 0;
   box-shadow: var(--shadow);
   transition: var(--transition);
+  margin-right: auto;
 }
 
 .navbar.scrolled {
@@ -139,7 +140,13 @@ a {
 .navbar-brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
+}
+
+.navbar-collapse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .brand-logo {
@@ -193,6 +200,8 @@ a {
   gap: 8px;
   transition: var(--transition);
   box-shadow: 0 4px 15px rgba(0, 119, 182, 0.3);
+  margin-left: 15px !important;
+  margin-right: auto;
 }
 
 .btn-primary-custom:hover {
@@ -2984,7 +2993,7 @@ a {
 }
 
 /* Emergency Navigation Link - Special Styling */
-.navbar-nav .nav-item .nav-link[href="emergency.html"] {
+.emergency {
   background: linear-gradient(135deg, #dc3545, #c82333);
   color: var(--white) !important;
   padding: 8px 20px;
@@ -2996,16 +3005,19 @@ a {
   gap: 8px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+  margin-right: 15px;
+  margin-left: auto;
+  white-space: nowrap;
 }
 
-.navbar-nav .nav-item .nav-link[href="emergency.html"]::before {
+.emergency::before {
   content: "\f0f9"; /* Font Awesome ambulance icon */
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   font-size: 14px;
 }
 
-.navbar-nav .nav-item .nav-link[href="emergency.html"]::after {
+.emergency::after {
   content: "24/7";
   font-size: 10px;
   background: var(--white);
@@ -3017,14 +3029,14 @@ a {
   animation: pulse 2s infinite;
 }
 
-.navbar-nav .nav-item .nav-link[href="emergency.html"]:hover {
+.emergency:hover {
   background: linear-gradient(135deg, #c82333, #bd2130);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(220, 53, 69, 0.4);
   color: var(--white) !important;
 }
 
-.navbar-nav .nav-item .nav-link[href="emergency.html"].active {
+.emergency.active {
   background: linear-gradient(135deg, #bd2130, #a71d2a);
 }
 
@@ -3062,7 +3074,9 @@ a {
     font-size: 12px;
     padding: 8px 0;
   }
-
+  .navbar-collapse {
+    flex-direction: column;
+  }
   .top-bar-content {
     flex-direction: column;
     gap: 10px;
@@ -3091,6 +3105,7 @@ a {
     border-radius: var(--radius-lg);
     margin-top: 15px;
     box-shadow: var(--shadow);
+    margin-right: auto;
   }
 
   .nav-item {
@@ -3101,6 +3116,12 @@ a {
     width: 100%;
     text-align: center;
     margin-top: 10px;
+    margin-left: 15px !important;
+  }
+
+  .btn-primary-custom.ms-lg-3 {
+    margin-left: 15px !important;
+    white-space: nowrap;
   }
 
   /* Hero Section */
@@ -3242,6 +3263,13 @@ a {
 
   .doctors-section .doctor-image {
     height: 280px;
+  }
+  .emergency,
+  .btn-primary-custom.ms-lg-3 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 10px;
+    width: 100%;
   }
 }
 
